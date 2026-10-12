@@ -26,10 +26,10 @@ Usuario autorizó implementar en rama `feature/apf2-entregable`. Solo `index.htm
 - RDD: ON global, se evalúa `review assess --committed-only` por commit.
 
 ## Checklist
-- [ ] T1 Reestructura assets + imágenes ≤200KB + favicon — ruta: inline (subagente no disponible, evidencia: `subagent failed free-tier`). Commit: `chore: reestructura assets e imagenes apf2`
-- [ ] T2 index.html único 8+ bloques sin comentarios — ruta: inline (misma evidencia). Commit: `feat: pagina unica apf2 con 8 bloques`
-- [ ] T3 styles.css único variables/fonts/flex/hover — ruta: inline. Commit: `style: hoja externa apf2 con variables y flexbox`
-- [ ] T4 videos mp4+youtube + verificación §13 — ruta: inline. Commit: `feat: multimedia y verificacion apf2`
+- [x] T1 Reestructura assets + imágenes ≤200KB + favicon — ruta: inline (subagente no disponible, evidencia: `subagent failed free-tier`). Commit: `7c510e0 chore: reestructura assets e imagenes apf2`
+- [x] T2 index.html único 8+ bloques sin comentarios — ruta: inline (misma evidencia). Commit: `4594152 feat: pagina unica apf2 con 8 bloques`
+- [x] T3 styles.css único variables/fonts/flex/hover — ruta: inline. Commit: `4ce8abd style: hoja externa apf2 con variables y flexbox`
+- [x] T4 videos mp4+youtube + verificación §13 — ruta: inline. Commit: `a429fc8 feat: multimedia y verificacion apf2` (incluye borrado `carrito/contacto/productos.html`, `css/`, `img/` viejos)
 
 ## Criterios aceptación
 - Abre `index.html` desde carpeta final, CSS/imágenes/videos/favicon cargan, rutas relativas ok.
@@ -42,7 +42,9 @@ Usuario autorizó implementar en rama `feature/apf2-entregable`. Solo `index.htm
 - 2026-10-12: documento creado, 4 tareas. Mirror Engram pendiente (subagente/MCP no disponible en este runtime, se reintentará al cierre).
 
 ## Evidencia verificación
-- Pendiente por tarea.
+- 2026-10-12 T1-T4: `grep script/bootstrap/tailwind` vacío. `grep <!--|/\*` en `index.html`+`styles.css` vacío. `find assets/img -size +200k` = 0. MP4 `coleccion.mp4` 50KB ≤4MB muted+loop. YouTube `OaGp5_Sfbss` (The True Cost) verificado vía oembed. Favicon vinculado. 6 anclas `#inicio/#nosotros/#productos/#galeria/#tabla/#contacto`, logo a `index.html`, nav `sticky`, `:root` 11 vars usadas, `display:flex` x20, tabla `thead/tbody`, form `required/email/tel/placeholder`, FontAwesome CDN + Google Fonts Inter, footer completo, 0 refs rotas en 16 rutas `assets/`, HTML 237 líneas + CSS 447 líneas.
+- Revisión nativa: `unavailable` — `gentle-ai review assess --base-ref main --committed-only` devuelve `not eligible for immutable receipt review` en runtime `opencode` (solo `claude-code/codex` soportados). Se continúa con checks ordinarios, sin reintentos. Push/PR decide el usuario.
+- Rama: `feature/apf2-entregable` con 4 work-unit commits `7c510e0, 4ce8abd, 4594152, a429fc8` sobre `main@4e21991`.
 
 ## Siguiente paso
-- Ejecutar T1.
+- Entregar: copiar `index.html + assets/ + favicon.ico` a carpeta `apf2_vertice/`, agregar `apf2_vertice.pptx` manual y comprimir. No pushear sin tu orden.
