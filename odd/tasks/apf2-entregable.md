@@ -50,3 +50,6 @@ Usuario autorizó implementar en rama `feature/apf2-entregable`. Solo `index.htm
 
 ## Siguiente paso
 - Entregar: copiar `index.html + assets/ + favicon.ico` a carpeta `apf2_vertice/`, agregar `apf2_vertice.pptx` manual y comprimir. No pushear sin tu orden.
+
+## Entrega
+- 2026-10-13 merge a `main`: `dc9bf6b merge: entregable unico apf2 vertice a main` (fast: `feature/apf2-entregable` con T1-T5). Verificado en `main`: `index.html` + `assets/css/styles.css` + `assets/videos/coleccion.mp4` presentes, `youtube-nocookie` x1.
