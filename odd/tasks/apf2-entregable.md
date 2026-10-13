@@ -30,6 +30,7 @@ Usuario autorizó implementar en rama `feature/apf2-entregable`. Solo `index.htm
 - [x] T2 index.html único 8+ bloques sin comentarios — ruta: inline (misma evidencia). Commit: `4594152 feat: pagina unica apf2 con 8 bloques`
 - [x] T3 styles.css único variables/fonts/flex/hover — ruta: inline. Commit: `4ce8abd style: hoja externa apf2 con variables y flexbox`
 - [x] T4 videos mp4+youtube + verificación §13 — ruta: inline. Commit: `a429fc8 feat: multimedia y verificacion apf2` (incluye borrado `carrito/contacto/productos.html`, `css/`, `img/` viejos)
+- [x] T5 Corrección videos (reporte usuario 2026-10-13: MP4 parecía foto, YouTube no reproducía) — ruta: inline. MP4 regenerado con zoom+fundidos 9s/631KB; YouTube cambiado a `F0hH-5UwAxQ` armario cápsula en `youtube-nocookie`. Commit: pendiente
 
 ## Criterios aceptación
 - Abre `index.html` desde carpeta final, CSS/imágenes/videos/favicon cargan, rutas relativas ok.
