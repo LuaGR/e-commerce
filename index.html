@@ -1,110 +1,237 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VÉRTICE — Ropa Esencial y Contemporánea</title>
-  <link rel="stylesheet" href="css/global.css">
-  <link rel="stylesheet" href="css/inicio.css">
-  <link rel="stylesheet" href="css/productos.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VÉRTICE — Ropa Esencial</title>
+<link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <header>
-    <div class="container header-inner">
-      <a href="index.html" class="logo">VÉRTICE</a>
-      <nav>
-        <ul>
-          <li><a href="index.html" class="active">Inicio</a></li>
-          <li><a href="productos.html">Productos</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-          <li><a href="carrito.html" class="cart-link">Carrito <span class="cart-count">0</span></a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <section class="hero">
-    <div class="container">
-      <h1>Diseño esencial para el día a día</h1>
-      <p>Prendas confeccionadas con materiales de calidad, pensadas para durar y acompañar tu estilo.</p>
-      <a href="productos.html" class="btn">Explorar colección</a>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <h2 class="section-title">Prendas destacadas</h2>
-      <div class="products-grid">
-        <div class="product-card">
-          <div class="product-img">
-            <img src="img/modelo 6.jpg" alt="Camiseta básica de algodón blanca">
-          </div>
-          <div class="product-info">
-            <div class="product-name">Camiseta Básica de Algodón</div>
-            <div class="product-price">S/ 49.00</div>
-            <a href="carrito.html" class="btn">Añadir al carrito</a>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-img">
-            <img src="img/modelo 4.webp" alt="Chaqueta denim clásica">
-          </div>
-          <div class="product-info">
-            <div class="product-name">Chaqueta Denim Clásica</div>
-            <div class="product-price">S/ 189.00</div>
-            <a href="carrito.html" class="btn">Añadir al carrito</a>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-img">
-            <img src="img/modelo3.jpg" alt="Suéter tejido de punto">
-          </div>
-          <div class="product-info">
-            <div class="product-name">Suéter Tejido Minimalista</div>
-            <div class="product-price">S/ 149.00</div>
-            <a href="carrito.html" class="btn">Añadir al carrito</a>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-img">
-            <img src="img/modelo 1.webp" alt="Sudadera urbana con capucha">
-          </div>
-          <div class="product-info">
-            <div class="product-name">Sudadera Urbana con Capucha</div>
-            <div class="product-price">S/ 129.00</div>
-            <a href="carrito.html" class="btn">Añadir al carrito</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" style="background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
-    <div class="container">
-      <div class="features">
-        <div class="feature">
-          <div class="feature-icon">🚚</div>
-          <h3>Envío gratuito</h3>
-          <p>Disponible en compras superiores a S/ 150.00</p>
-        </div>
-        <div class="feature">
-          <div class="feature-icon">🔒</div>
-          <h3>Pago protegido</h3>
-          <p>Transacciones seguras y cifradas</p>
-        </div>
-        <div class="feature">
-          <div class="feature-icon">↩️</div>
-          <h3>Garantía de cambio</h3>
-          <p>30 días para cambios sin costos adicionales</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2026 VÉRTICE. Todos los derechos reservados.</p>
-    </div>
-  </footer>
+<div class="topbar">
+<div class="container topbar-inner">
+<div class="topbar-contact">
+<a href="mailto:contacto@vertice.pe"><i class="fa-solid fa-envelope"></i> contacto@vertice.pe</a>
+<a href="tel:+5112345678"><i class="fa-solid fa-phone"></i> (01) 123-4567</a>
+</div>
+<div class="topbar-social">
+<a href="https://facebook.com/vertice" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i></a>
+<a href="https://instagram.com/vertice" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+<a href="https://wa.me/51999999999" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+</div>
+</div>
+</div>
+<header>
+<div class="container header-inner">
+<a href="index.html" class="logo">VÉRTICE</a>
+<nav>
+<ul>
+<li><a href="#inicio" class="active">Inicio</a></li>
+<li><a href="#nosotros">Nosotros</a></li>
+<li><a href="#productos">Productos</a></li>
+<li><a href="#galeria">Galería</a></li>
+<li><a href="#tabla">Tallas</a></li>
+<li><a href="#contacto">Contacto</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<section id="inicio" class="hero">
+<div class="container hero-inner">
+<div class="hero-text">
+<h1>Diseño esencial para el día a día</h1>
+<p>Prendas confeccionadas con materiales de calidad, pensadas para durar y acompañar tu estilo.</p>
+<a href="#productos" class="btn">Explorar colección</a>
+</div>
+<div class="hero-img">
+<img src="assets/img/modelo-6.jpg" alt="Camiseta básica de algodón blanca">
+</div>
+</div>
+</section>
+<section id="nosotros" class="section">
+<div class="container nosotros-inner">
+<div class="nosotros-text">
+<h2 class="section-title">Presentación</h2>
+<p>Somos VÉRTICE, una tienda de ropa esencial y contemporánea. Diseñamos básicos durables con materiales responsables y tallas reales.</p>
+<p>Trabajamos con producción local y precios claros para un armario simple que combina con todo.</p>
+<div class="datos">
+<div class="dato"><strong>+5000</strong><span>clientes</span></div>
+<div class="dato"><strong>4.9</strong><span>valoración</span></div>
+<div class="dato"><strong>30</strong><span>días de cambio</span></div>
+</div>
+</div>
+<div class="nosotros-img">
+<img src="assets/img/abrigo-de-pano.jpg" alt="Abrigo de paño estructurado">
+</div>
+</div>
+</section>
+<section id="productos" class="section section-alt">
+<div class="container">
+<h2 class="section-title">Productos destacados</h2>
+<div class="products">
+<div class="card">
+<div class="card-img"><img src="assets/img/camiseta.jpg" alt="Camiseta básica de algodón"></div>
+<div class="card-body">
+<h3>Camiseta Básica de Algodón</h3>
+<p class="price">S/ 49.00</p>
+<a href="#contacto" class="btn">Consultar</a>
+</div>
+</div>
+<div class="card">
+<div class="card-img"><img src="assets/img/chaqueta.jpg" alt="Chaqueta denim clásica"></div>
+<div class="card-body">
+<h3>Chaqueta Denim Clásica</h3>
+<p class="price">S/ 189.00</p>
+<a href="#contacto" class="btn">Consultar</a>
+</div>
+</div>
+<div class="card">
+<div class="card-img"><img src="assets/img/sueter-minimalista.jpg" alt="Suéter tejido minimalista"></div>
+<div class="card-body">
+<h3>Suéter Tejido Minimalista</h3>
+<p class="price">S/ 149.00</p>
+<a href="#contacto" class="btn">Consultar</a>
+</div>
+</div>
+<div class="card">
+<div class="card-img"><img src="assets/img/vestido-midi.jpg" alt="Vestido midi contemporáneo"></div>
+<div class="card-body">
+<h3>Vestido Midi Contemporáneo</h3>
+<p class="price">S/ 159.00</p>
+<a href="#contacto" class="btn">Consultar</a>
+</div>
+</div>
+</div>
+<div class="features">
+<div class="feature"><i class="fa-solid fa-truck"></i><h3>Envío gratuito</h3><p>En compras mayores a S/ 150.00</p></div>
+<div class="feature"><i class="fa-solid fa-lock"></i><h3>Pago protegido</h3><p>Compra segura y garantizada</p></div>
+<div class="feature"><i class="fa-solid fa-rotate-left"></i><h3>Garantía de cambio</h3><p>30 días sin costo adicional</p></div>
+</div>
+</div>
+</section>
+<section id="galeria" class="section">
+<div class="container">
+<h2 class="section-title">Galería</h2>
+<p class="section-sub">Looks reales de la colección actual.</p>
+<div class="galeria">
+<img src="assets/img/modelo-1.webp" alt="Sudadera urbana con capucha">
+<img src="assets/img/modelo-4.webp" alt="Chaqueta denim clásica">
+<img src="assets/img/modelo3.jpg" alt="Suéter tejido de punto">
+<img src="assets/img/polera.jpg" alt="Polera urbana">
+<img src="assets/img/pantalon-chino.jpg" alt="Pantalón chino slim">
+<img src="assets/img/camiseta-de-lino.jpg" alt="Sobrecamisa de lino">
+</div>
+</div>
+</section>
+<section id="tabla" class="section section-alt">
+<div class="container">
+<h2 class="section-title">Guía de tallas y precios</h2>
+<div class="tabla-wrap">
+<table>
+<thead>
+<tr><th>Prenda</th><th>Talla</th><th>Precio</th><th>Disponibilidad</th></tr>
+</thead>
+<tbody>
+<tr><td>Camiseta Básica</td><td>S / M / L</td><td>S/ 49.00</td><td>En stock</td></tr>
+<tr><td>Chaqueta Denim</td><td>M / L</td><td>S/ 189.00</td><td>En stock</td></tr>
+<tr><td>Suéter Minimalista</td><td>S / M</td><td>S/ 149.00</td><td>Últimas unidades</td></tr>
+<tr><td>Vestido Midi</td><td>S / M / L</td><td>S/ 159.00</td><td>En stock</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="multimedia" class="section">
+<div class="container">
+<h2 class="section-title">Multimedia</h2>
+<div class="media">
+<div class="media-item">
+<h3>Colección en video</h3>
+<video controls autoplay muted loop playsinline preload="metadata" width="100%"><source src="assets/videos/coleccion.mp4" type="video/mp4">Tu navegador no puede reproducir el video.</video>
+</div>
+<div class="media-item">
+<h3>Armario cápsula</h3>
+<iframe src="https://www.youtube-nocookie.com/embed/F0hH-5UwAxQ" title="Básicos imprescindibles armario cápsula minimalista" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+</section>
+<section class="section section-alt">
+<div class="container">
+<h2 class="section-title">Opiniones</h2>
+<div class="testimonios">
+<div class="testimonio"><p>“Calidad excelente y tallas precisas. Mi tienda favorita.”</p><span>— Camila R.</span></div>
+<div class="testimonio"><p>“El envío llegó rápido y el cambio fue muy simple.”</p><span>— Diego M.</span></div>
+<div class="testimonio"><p>“Básicos que combinan con todo, los recomiendo.”</p><span>— Valeria T.</span></div>
+</div>
+</div>
+</section>
+<section id="contacto" class="section">
+<div class="container contacto-inner">
+<div class="contacto-info">
+<h2 class="section-title">Contacto</h2>
+<p>Escríbenos para consultas sobre productos, pedidos y cambios.</p>
+<p><i class="fa-solid fa-envelope"></i> contacto@vertice.pe</p>
+<p><i class="fa-solid fa-phone"></i> (01) 123-4567</p>
+<p><i class="fa-solid fa-location-dot"></i> Av. Larco 123, Lima</p>
+</div>
+<div class="contacto-form">
+<form action="#" method="post">
+<div class="form-row">
+<div class="form-group">
+<label for="nombre">Nombre</label>
+<input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+</div>
+<div class="form-group">
+<label for="telefono">Teléfono</label>
+<input type="tel" id="telefono" name="telefono" placeholder="999 999 999" required>
+</div>
+</div>
+<div class="form-group">
+<label for="email">Correo electrónico</label>
+<input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+</div>
+<div class="form-group">
+<label for="asunto">Asunto</label>
+<select id="asunto" name="asunto" required>
+<option value="" disabled selected>Selecciona un asunto</option>
+<option value="consulta">Consulta sobre productos</option>
+<option value="pedido">Estado de mi pedido</option>
+<option value="cambio">Cambios y devoluciones</option>
+</select>
+</div>
+<div class="form-group">
+<label for="mensaje">Mensaje</label>
+<textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+</div>
+<button type="submit" class="btn">Enviar mensaje</button>
+</form>
+</div>
+</div>
+</section>
+<footer>
+<div class="container footer-inner">
+<div class="footer-col">
+<strong>VÉRTICE</strong>
+<p>Ropa esencial y contemporánea.</p>
+</div>
+<div class="footer-col">
+<strong>Contacto</strong>
+<p>contacto@vertice.pe</p>
+<p>(01) 123-4567</p>
+</div>
+<div class="footer-col">
+<strong>Enlaces</strong>
+<p><a href="#nosotros">Nosotros</a> · <a href="#productos">Productos</a> · <a href="#galeria">Galería</a> · <a href="#contacto">Contacto</a></p>
+</div>
+</div>
+<div class="footer-bar">
+<p>© 2026 VÉRTICE. Todos los derechos reservados.</p>
+</div>
+</footer>
 </body>
 </html>
