@@ -1,0 +1,1201 @@
+/* VARIABLES CSS */
+:root {
+    --color-fondo: #fafafa;
+    --color-superficie: #ffffff;
+    --color-texto: #1a1a1a;
+    --color-secundario: #666666;
+    --color-acento: #2d2d2d;
+    --color-borde: #e5e5e5;
+    --fuente-principal: "Inter", -apple-system, "Segoe UI", Roboto, sans-serif;
+    --radio: 8px;
+    --sombra: 0 1px 3px rgba(0, 0, 0, 0.06);
+    --sombra-hover: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* SELECTORES */
+/* Selector universal de elementos */
+* {
+    margin: 0;
+    padding: 0;
+    /* Evita que las cajas cambien de tamaño cuando se agregan espacios como padding, margin yborde */
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    background: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+img,
+video,
+iframe {
+    display: block;
+}
+
+
+
+/* Selectores tipo identificador (id) */
+#portada {
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 0;
+
+}
+
+#testimonies,
+#stores,
+#contact,
+#shopping {
+    position: relative;
+    /* A continuación son espacios en la parte de Testimonio */
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+/* FIN Selectores tipo identificador (id) */
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.padding-xl {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.topbar {
+    background: var(--color-acento);
+    color: var(--color-superficie);
+    font-size: 0.8rem;
+}
+
+.topbar-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.topbar-contact {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.topbar-social {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+}
+
+.topbar a:hover {
+    opacity: 0.75;
+}
+
+.header {
+    background: var(--color-superficie);
+    border-bottom: 1px solid var(--color-borde);
+    position: relative;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    height: 64px;
+}
+
+
+/* Inicia portada */
+.portada-texto {
+    position: absolute;
+    top: 220px;
+    left: 40px;
+    border-radius: 20px;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 25px;
+    color: white;
+    font-size: var(--fuente-principal);
+}
+
+.portada-texto h1 {
+    font-size: 44px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+
+.portada-texto a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: var(--fuente-principal);
+    border-radius: 20px;
+}
+
+/* Termina portada */
+/* Inicio de diseño de testimonios */
+.testimonies {
+    background-color: #2d2d2d;
+    color: var(--color-fondo);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: linear-gradient(90deg, rgba(32, 54, 70, 0.9) 0%,
+            rgba(32, 54, 70, 0.5) 100%),
+        url("../img/pexels-chris-f-38966-8619007.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.testimonies a {
+    color: var(--color-fondo);
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.testimonies h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.testimonies nav {
+    margin-top: 20px;
+}
+
+.clientes-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+
+}
+
+.cliente-item {
+    border: 1px solid var(--color-secundario);
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.cliente-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    /* Evita que la imagen se deforme */
+    align-items: center;
+    border-radius: 20px;
+}
+
+
+.cliente-item p {
+    color: var(--color-secundario)
+}
+
+/* Término de diseño de Testimonios */
+/* Inicio de diseño de Tiendas */
+.stores {
+    background-color: #2d2d2d;
+    color: var(--color-fondo);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: linear-gradient(90deg, rgba(32, 54, 70, 0.9) 0%,
+            rgba(32, 54, 70, 0.5) 100%),
+        url("../img/stores-portada.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.stores-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.stores-item {
+    padding: 15px;
+    border-radius: 20px;
+}
+
+
+.stores-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    /* Evita que la imagen se deforme */
+    align-items: center;
+    border-radius: 20px;
+}
+
+.stores a {
+    color: var(--color-fondo);
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.stores h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.stores nav {
+    margin-top: 20px;
+}
+
+
+/* Término de diseño de Tiendas */
+
+/* Inicio de diseño de Galería */
+.gallery {
+    background-color: #2d2d2d;
+    color: var(--color-fondo);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: linear-gradient(90deg, rgba(32, 54, 70, 0.9) 0%,
+            rgba(32, 54, 70, 0.5) 100%),
+        url("../img/portada.jpg ");
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery a {
+    color: var(--color-fondo);
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.gallery h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.gallery nav {
+    margin-top: 20px;
+}
+
+.gallery-grid1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery-grid2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* Evita que la imagen se deforme */
+
+}
+
+/* Término de diseño de Galería */
+/* Inicio de diseño de Contacto */
+.contact {
+    background-color: #2d2d2d;
+    color: var(--color-fondo);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: linear-gradient(90deg, rgba(32, 54, 70, 0.9) 0%,
+            rgba(32, 54, 70, 0.5) 100%),
+        url("../img/contacto-portada.jpg");
+    background-size: cover;
+    background-position: 0px 1600px;
+}
+
+.contact a {
+    color: var(--color-fondo);
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.contact h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.contact nav {
+    margin-top: 20px;
+}
+
+
+
+/* Término de diseño de Contacto */
+/* Inicio de diseño de Lista de contactos */
+.contact-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.contact-item {
+    flex: 1 1 200px;
+    text-align: center;
+    padding: 24px 12px;
+}
+
+.contact-item i {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+/* Término de diseño de Lista de contactos */
+/* Inicio de diseño de Section */
+.section {
+    padding: 64px 0;
+}
+
+.section-alt {
+    background: var(--color-superficie);
+    border-top: 1px solid var(--color-borde);
+    border-bottom: 1px solid var(--color-borde);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 24px;
+}
+
+.galeria p .btn {
+    text-align: center;
+}
+
+.section-sub {
+    color: var(--color-secundario);
+    margin-bottom: 28px;
+}
+
+/* Término de diseño de Section */
+/* Inicio de diseño de shopping */
+.shopping {
+    background-color: #2d2d2d;
+    color: var(--color-fondo);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: linear-gradient(90deg, rgba(32, 54, 70, 0.9) 0%,
+            rgba(32, 54, 70, 0.5) 100%),
+        url("../img/shop-portada.jpg");
+    background-size: cover;
+    background-position: 0px 1600px;
+}
+
+.shopping a {
+    color: var(--color-fondo);
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.shopping h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.shopping nav {
+    margin-top: 20px;
+}
+
+/* Término de diseño de shopping */
+
+.nosotros-inner {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nosotros-text {
+    flex: 2;
+}
+
+.nosotros-text p {
+    color: var(--color-secundario);
+    margin-bottom: 12px;
+}
+
+.nosotros-img {
+    height: 100%;
+    width: 100%;
+    flex: 5;
+}
+
+.nosotros-img img {
+    border-radius: var(--radio);
+}
+
+.nosotros-img img:hover {
+    box-shadow: var(--sombra-hover);
+}
+
+.datos {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin-top: 20px;
+}
+
+.dato {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.dato strong {
+    font-size: 1.3rem;
+}
+
+.dato span {
+    font-size: 0.8rem;
+    color: var(--color-secundario);
+}
+
+.products {
+    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 24px;
+}
+
+.card {
+    flex: 1 1 220px;
+    background: var(--color-superficie);
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    box-shadow: var(--sombra-hover);
+}
+
+.card-img img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.card-img img:hover {
+    opacity: 0.92;
+}
+
+.card-body {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.price {
+
+    color: var(--color-secundario);
+}
+
+.features {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.feature {
+    flex: 1 1 200px;
+    text-align: center;
+    padding: 24px 12px;
+}
+
+.feature i {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.galeria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.galeria img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: var(--radio);
+}
+
+.galeria img:hover {
+    opacity: 0.9;
+    box-shadow: var(--sombra-hover);
+}
+
+.tabla-wrap {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--color-superficie);
+}
+
+th,
+td {
+    border: 1px solid var(--color-borde);
+    padding: 12px 16px;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+thead th {
+    background: var(--color-acento);
+    color: var(--color-superficie);
+}
+
+tbody tr:hover {
+    background: var(--color-fondo);
+}
+
+.media {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.media-item {
+    flex: 1 1 300px;
+}
+
+.media-item h3 {
+    margin-bottom: 12px;
+    font-size: 1rem;
+}
+
+
+.testimonios {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.testimonio {
+    flex: 1 1 240px;
+    background: var(--color-fondo);
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio);
+    padding: 20px;
+}
+
+.testimonio span {
+    font-size: 0.85rem;
+    color: var(--color-secundario);
+}
+
+.contacto-inner {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.contacto-info {
+    flex: 1;
+}
+
+.contacto-info p {
+    color: var(--color-secundario);
+    margin-bottom: 10px;
+}
+
+.contacto-form {
+    flex: 2;
+    background: var(--color-superficie);
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio);
+    padding: 24px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 14px;
+    flex: 1;
+}
+
+.form-group label {
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio);
+    padding: 10px 12px;
+    font-family: var(--fuente-principal);
+    font-size: 0.9rem;
+    background: var(--color-superficie);
+}
+
+.form-group textarea {
+    min-height: 110px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 32px;
+    background: var(--color-acento);
+    color: var(--color-superficie);
+    border-radius: var(--radio);
+    font-size: 0.875rem;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-center {
+    padding: 12px 32px;
+    background: var(--color-acento);
+    color: var(--color-superficie);
+    border-radius: var(--radio);
+    font-size: 0.875rem;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+.btn-center:hover {
+    opacity: 0.85;
+}
+
+footer {
+    background: var(--color-acento);
+    color: var(--color-superficie);
+    margin-top: 0;
+}
+
+.footer-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 32px;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    padding-bottom: 24px;
+}
+
+.footer-col {
+    flex: 1 1 200px;
+}
+
+.footer-col p,
+.footer-col a {
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+.footer-col a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.footer-bar {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    padding: 16px 0;
+    font-size: 0.8rem;
+}
+
+/* Iniciamos el scroll up */
+.scroll-up {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+
+    width: 45px;
+    height: 45px;
+    background-color: var(--color-secundario);
+    color: var(--color-fondo);
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease-in-out;
+}
+
+.scroll-up:hover {
+    transform: translateY();
+}
+
+/* Hidden = true // ocultar
+hidden = false // visible */
+.scroll-up[hidden] {
+    display: none;
+}
+
+/* Finalizamos el scroll up */
+
+/* SELECTORES PARA EL DISEÑO WEB RESPONSIVE*/
+
+.img-fluid {
+    /* Para que las imágenes encajen en sus cajas */
+    width: 100%;
+    height: auto;
+}
+
+.video-fluid {
+    width: 100%;
+    height: auto;
+    /* Aspecto ratio es auto */
+    aspect-ratio: auto;
+}
+
+.mapa-fluid {
+    width: 100%;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* Posicionar el menú flotante */
+    position: relative;
+}
+
+.logo-ancho {
+    width: 590px;
+    transition: all 0.4s ease-in-out;
+}
+
+.logo-ancho:hover {
+    transform: scale(0.9);
+}
+
+/* Boton hamburguesa */
+.nav-menu-toggle {
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+
+}
+
+/* Barra de menú */
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-menu a {
+    color: var(--color-texto);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Permite resaltar el elemento del menu en la pagina actual */
+.nav.menu a[aria-current="page"] {
+    background-color: var(--color-acento);
+    color: var(--color-fondo)
+}
+
+/* Permite resaltar el elemneto del menu al pasar el mouse por encima */
+nav a:hover,
+nav a.active {
+    background-color: var;
+    color: var(--color-secundario);
+}
+
+/*************************Reglas AT**********************/
+/* Para trabajar con pantallas de tablets */
+@media (max-width: 992px) {
+    .container {
+        padding-left: 110px;
+        padding-right: 110px;
+    }
+
+    /* Cabecera y menú hamburguesa */
+    .nav-menu-toggle {
+        display: block;
+        width: auto;
+    }
+
+    .nav-bar {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        /* Posicionar el menú flotante */
+        position: relative;
+    }
+
+    .nav-menu a[aria-current="page"] {
+        background-color: var(--color-acento);
+        color: var(--color-fondo)
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 100%;
+        right: 0;
+
+        flex-direction: column;
+
+        background-color: var(--color-fondo);
+        width: 250px;
+        padding: 1.5rem;
+        box-shadow: 0px 8px 24px var(--color-acento);
+        border-radius: 12px;
+
+        transform: translateY(-12px);
+        transition: all 0.4s ease-in-out;
+
+        visibility: hidden;
+        opacity: 0;
+        z-index: 1001;
+    }
+
+    .nav-menu.active {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .nav-menu a {
+        display: block;
+        width: 100%;
+        border-radius: 8px;
+        padding: 1rem;
+        border-bottom: 1px solid var(--color-texto);
+    }
+
+    .products {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: 24px;
+    }
+
+    /* Portada */
+    .portada-texto {
+        position: absolute;
+        width: 350px;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px 20px;
+    }
+
+    .portada-texto h1 {
+        font-size: 30px;
+    }
+
+    .portada-texto a {
+        display: inline-block;
+    }
+
+    /* Sección Nosotros */
+    .nosotros-inner {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    /* Posición de imagen */
+    .shopping {
+        background-position: 0px 500px;
+    }
+
+    .contact {
+        background-position: 0px 1100px;
+    }
+
+    /* Grids a 2 columnas */
+    .clientes-grid,
+    .gallery-grid1 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .stores-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Contacto y formularios */
+    .contacto-inner,
+    .form-row {
+        display: flex;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .topbar-contact {
+        display: inline-block;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 25px 25px;
+    }
+
+    #portada {
+        position: relative;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    /* 3. Portada más ligera en móvil */
+    .portada-texto {
+        color: blue,
+    }
+
+    /* 1. Espaciados generales más compactos */
+    .section {
+        padding: 40px 0;
+    }
+
+    h2,
+    .section-title {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+
+    /* 2. Barra superior (Topbar) en columna */
+    .topbar-inner {
+        flex-direction: column;
+        gap: 6px;
+        text-align: center;
+    }
+
+    .topbar-contact {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .video-fluid {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* Recorta los lados sobrantes sin deformar el video */
+        object-position: center;
+        /* Enfoca el centro del video (puedes usar 'right' para enfocar a la chica) */
+        display: block;
+    }
+
+    /* 3. Portada más ligera en móvil */
+    .portada-texto {
+        position: sticky;
+        width: auto;
+        padding: 24px 16px;
+        text-align: center;
+        border-radius: 0px;
+        padding: 25px 25px;
+    }
+
+    .portada-texto h1 {
+        font-size: 24px;
+    }
+
+    .portada-texto a {
+        width: 50%;
+    }
+
+    /* 4. Datos de la sección Nosotros centrados */
+    .datos {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 16px;
+    }
+
+    .dato {
+        align-items: center;
+        text-align: center;
+    }
+
+    /* 5. Productos y tarjetas a 1 columna */
+    .card {
+        flex: 1 1 100%;
+    }
+
+    /* 6. Galería de inicio a 2 columnas flexibles */
+    .galeria img {
+        width: calc(50% - 8px);
+        height: 180px;
+    }
+
+    /* 7. Grids de páginas internas a 1 sola columna */
+    .clientes-grid,
+    .stores-grid,
+    .gallery-grid1,
+    .gallery-grid2 {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    /* 8. Encabezados de páginas internas (Testimonios, Tiendas, Galería, Contacto) */
+    .testimonies,
+    .stores,
+    .gallery,
+    .contact,
+    .shopping {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        text-align: center;
+    }
+
+    .testimonies h1,
+    .stores h1,
+    .gallery h1,
+    .contact h1,
+    .shopping h1 {
+        font-size: 2rem;
+    }
+
+    .stores-item img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        /* Evita que la imagen se deforme */
+        align-items: center;
+        border-radius: 20px;
+    }
+
+    /* 9. Footer en columnas centradas */
+    .footer-inner {
+        display: block;
+        text-align: center;
+        gap: 24px;
+    }
+
+    .footer-col {
+        flex: 1 1 100%;
+    }
+}
+
+/* Celulares de baja resolución */
+@media (max-width: 576px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .contacto-form{
+        width: 100%;
+    }
+    
+    .form-row{
+        display: block;
+    }
+
+    .contacto-inner  {
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .clientes-grid,
+    .stores-grid,
+    .gallery-grid1,
+    .gallery-grid2 {
+        display: block;
+    }
+    
+}
